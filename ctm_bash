@@ -1,0 +1,16 @@
+#/bin/bash
+export SCRIPT_DIR=$(cd $(dirname $(readlink $0 || echo $0));pwd)
+if [ -e $SCRIPT_DIR/.installed ]; then
+    echo
+else
+    echo "Not installed"
+    echo "Please execute install.sh"
+    exit
+fi
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+export PATH=$SCRIPT_DIR/bin:$PATH
+export PATH=$SCRIPT_DIR/exbin:$PATH
+export HOME=$SCRIPT_DIR/home
+export PYTHONPATH=$SCRIPT_DIR/ctmlibs
+clear
+cd ~/ && bash && clear
