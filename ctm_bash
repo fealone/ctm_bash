@@ -13,4 +13,4 @@ export PATH=$SCRIPT_DIR/exbin:$PATH
 export HOME=$SCRIPT_DIR/home
 export PYTHONPATH=$SCRIPT_DIR/ctm_pylibs
 clear
-cd ~/ && bash && clear
+cd ~/ && exec bash
