@@ -11,6 +11,6 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/b
 export PATH=$SCRIPT_DIR/bin:$PATH
 export PATH=$SCRIPT_DIR/exbin:$PATH
 export HOME=$SCRIPT_DIR/home
-export PYTHONPATH=$SCRIPT_DIR/ctmlibs
+export PYTHONPATH=$SCRIPT_DIR/ctm_pylibs
 clear
 cd ~/ && bash && clear
