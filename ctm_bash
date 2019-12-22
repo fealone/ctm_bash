@@ -1,5 +1,4 @@
 #/bin/bash
-cd $(cd $(dirname $0); pwd)
 export SCRIPT_DIR=$(cd $(dirname $(readlink $0 || echo $0));pwd)
 if [ -e $SCRIPT_DIR/.installed ]; then
     echo
@@ -15,4 +14,4 @@ export HOME=$SCRIPT_DIR/home
 export PYTHONPATH=$SCRIPT_DIR/ctm_pylibs
 export SHELL=/bin/bash
 clear
-cd ~/ && exec /bin/bash $@
+exec /bin/bash $@

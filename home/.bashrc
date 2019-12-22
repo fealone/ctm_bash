@@ -97,6 +97,4 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-export PYENV_ROOT=~/.pyenv
-export PATH=~/.pyenv/bin:$PATH
-eval "$(pyenv init -)"
+source ~/../ctm_bashrc

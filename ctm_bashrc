@@ -1,0 +1,4 @@
+#!/bin/bash
+export PYENV_ROOT=~/.pyenv
+export PATH=~/.pyenv/bin:$PATH
+eval "$(pyenv init -)"
