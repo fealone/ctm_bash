@@ -13,5 +13,6 @@ export PATH=$SCRIPT_DIR/bin:$PATH
 export PATH=$SCRIPT_DIR/exbin:$PATH
 export HOME=$SCRIPT_DIR/home
 export PYTHONPATH=$SCRIPT_DIR/ctm_pylibs
+export SHELL=/bin/bash
 clear
-cd ~/ && exec /bin/bash
+cd ~/ && exec /bin/bash $@
